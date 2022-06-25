@@ -1,4 +1,54 @@
+:root{
+--light-cyan: hsl(193, 38%, 86%);
+--neon-green: hsl(150, 100%, 66%);
+--grayish-blue: hsl(217, 19%, 38%);
+--dark-grayish-blue: hsl(217, 19%, 24%);
+--dark-blue: hsl(218, 23%, 16%);
+font-size: 16px;
+}
+
 body{
+  background-color: var(--dark-blue);
   margin: 0;
   padding: 0;
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+}
+.main-card-container{
+  margin: 14rem auto;
+  background-color: var(--dark-grayish-blue);
+  width: 33.75rem;
+  max-width: 540px;
+  border-radius: 15px;
+  padding: 3rem 0 4rem;
+}
+.title{
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-size: 0.85rem;
+  letter-spacing: 0.2rem;
+  color: var(--neon-green)
+}
+.advice{
+  width: 80%;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  color: var(--light-cyan);
+}
+.bottom-card-decoration{
+  margin: 2rem auto 0;
+  width: 82%;
+
+  .left-line .right-line{
+    width: 45%;
+    padding-top: 2px;
+    opacity: 0.25;
+    background-color: var(--dark-grayish-blue)
+  }
+  .center-decoration{
+    width: 10%;
+  }
 }
